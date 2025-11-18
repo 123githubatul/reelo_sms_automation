@@ -38,7 +38,7 @@ public class sms{
         
  
         WebElement template = wait.until(ExpectedConditions.visibilityOfElementLocated(
-        	    By.xpath("//h4[contains(text(), 'Nacho Day’s Here — Let’s Get Cheesy! 🧀')]")
+        	    By.xpath("//body/div[@id='root']/div[@class='app-and-sidebar-layout app-and-sidebar-layout--alert-banner-hidden']/div[@class='private-layout-root']/main[@class='main-content ']/div[@class='campaigns-homepage']/div[@class='categories']/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]")
         	));
  
         	// Smooth scroll directly to it
@@ -402,3 +402,4 @@ public class sms{
     	
        
     }
+
