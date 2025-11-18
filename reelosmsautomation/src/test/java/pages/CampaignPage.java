@@ -15,7 +15,7 @@ public class CampaignPage {
     
     // Locators
     private By campaignMenu = By.xpath("//span[contains(@class,'menu-title') and normalize-space()='Campaigns']");
-    private By nachoTemplate = By.xpath("//h4[contains(text(), 'Nacho Day’s Here — Let’s Get Cheesy! 🧀')]");
+    private By nachoTemplate = By.xpath("//body/div[@id='root']/div[@class='app-and-sidebar-layout app-and-sidebar-layout--alert-banner-hidden']/div[@class='private-layout-root']/main[@class='main-content ']/div[@class='campaigns-homepage']/div[@class='categories']/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]");
     private By smsChannel = By.xpath("//div[normalize-space()='SMS']");
     private By customizeSendBtn = By.xpath("//span[normalize-space()='Customise and Send']");
     
@@ -56,4 +56,5 @@ public class CampaignPage {
         js.executeScript("arguments[0].click();", customizeBtn);
         System.out.println("✅ Clicked on 'Customize and Send' successfully!");
     }
+
 }
